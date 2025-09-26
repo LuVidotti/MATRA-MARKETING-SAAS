@@ -10,14 +10,13 @@ export function useCreateSpotLead() {
     mutationFn: async (values: z.infer<typeof createSpotLeadSchema>) => {
       await api.post('/matra/leads/create-2', {
         ...values,
-        origin: 'JEREMIAS-MATRA',
+        origin: 'JEREMIAS-MATRA-MARKETING',
         whatsappGroup:
-          'https://wa.me/554384778544?text=Ol%C3%A1%2C%20quero%20desenvolver%20meu%20sass!',
+          'https://wa.me/554384778544?text=Ol%C3%A1%2C%20quero%20multiplicar%20minhas%20vendas%20com%20marketing%20digital!',
         messages: [
           'Opa! tudo bem? 😊',
-          'Esse disparo só é para ter certeza que voce conseguiu entrar em contato, clique no link abaixo caso não tenha entrado:',
-          'https://wa.me/554384778544?text=Ol%C3%A1%2C%20quero%20desenvolver%20meu%20sass!',
-          'Obrigado!',
+          'Vi que demonstrou interesse no nosso serviço! 🤝',
+          'Como posso te ajudar a multiplicar suas vendas?',
         ],
       })
       return
