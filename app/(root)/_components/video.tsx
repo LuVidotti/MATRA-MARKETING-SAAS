@@ -24,7 +24,7 @@ const Video = ({ src, themeColor = '#00ff0c' }: VideoProps) => {
   }
 
   return (
-    <div className="relative w-full max-w-[57.0625rem] overflow-hidden rounded-sm">
+    <div className="relative w-full max-w-sm overflow-hidden rounded-sm md:max-w-md">
       <video
         autoPlay
         playsInline
@@ -37,7 +37,7 @@ const Video = ({ src, themeColor = '#00ff0c' }: VideoProps) => {
         poster="/default-video-banner.png"
         onPlaying={() => setIsPlaying(true)}
         controlsList="nodownload nofullscreen"
-        className="w-full max-w-[57.0625rem] rounded-sm"
+        className="w-full max-w-sm rounded-sm md:max-w-md"
         onPause={() => {
           setIsPlaying(false)
         }}
