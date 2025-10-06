@@ -10,6 +10,7 @@ import {
 } from 'lucide-react'
 import { LeadFormButton } from './_components/lead-form-button'
 import Video from './_components/video'
+import { CountdownTimer } from './_components/countdown-timer'
 import { CreateSpotLeadSheet } from '@/features/spot-leads/components/create-spot-lead-sheet'
 import { FacebookPixel } from '@/components/facebook-pixel'
 
@@ -572,20 +573,7 @@ export default function MatraLandingPage() {
                     expira em:
                   </h4>
 
-                  <div className="flex justify-center gap-4 text-center">
-                    <div className="rounded-lg bg-black/50 px-4 py-2">
-                      <div className="text-2xl font-bold text-white">23</div>
-                      <div className="text-xs text-gray-300">HORAS</div>
-                    </div>
-                    <div className="rounded-lg bg-black/50 px-4 py-2">
-                      <div className="text-2xl font-bold text-white">47</div>
-                      <div className="text-xs text-gray-300">MINUTOS</div>
-                    </div>
-                    <div className="rounded-lg bg-black/50 px-4 py-2">
-                      <div className="text-2xl font-bold text-white">23</div>
-                      <div className="text-xs text-gray-300">SEGUNDOS</div>
-                    </div>
-                  </div>
+                  <CountdownTimer />
 
                   <div className="group relative inline-block">
                     <div className="absolute inset-0 animate-pulse rounded-lg bg-gradient-to-r from-white via-gray-200 to-gray-300 opacity-40 blur-sm transition-opacity group-hover:opacity-60" />
